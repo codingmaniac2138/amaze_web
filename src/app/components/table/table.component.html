@@ -1,0 +1,170 @@
+<section class="table-section">
+  <div class="container">
+    <table style="width:1250px;margin-left:-55px; margin-top:50px" class="table">
+        <thead>
+
+      <tr>
+        <th>Status</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Discharg Date</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr  routerLink = "new-cmp">
+        
+        <td><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+          New</td>
+        <td>John</td>
+        <td>Doe</td>
+        <td>11/11/2017</td>
+    
+      </tr>
+      <tr  routerLink = "new-cmp">
+        <td><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> New</td>
+        <td>Tom</td>
+        <td>Smith</td>
+        <td>11/12/2017</td>
+    
+      </tr>
+      <tr  routerLink = "new-cmp">
+        <td><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> In Progress</td>
+        <td>Jeff</td>
+        <td>Jhone</td>
+        <td>12/10/2017</td>
+    
+      </tr>
+    
+    <tr  routerLink = "new-cmp">
+      <td><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> In Progress</td>
+      <td>Jane</td>
+      <td>Robert</td>
+      <td>12/10/2017</td>
+    
+    </tr>
+    
+    <tr  routerLink = "new-cmp">
+      <td><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> New</td>
+      <td>Jane</td>
+      <td>Mark</td>
+      <td>1/10/2017</td>
+    
+    </tr>
+  </tbody>
+
+    </table>
+    </div>
+</section>
+<!-- <section class="table-section">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Employee ID</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Harshit</td>
+        <td>Pareek</td>
+        <td>AF098908</td>
+        <td>Amaze Admin</td>
+      </tr>
+      <tr>
+        <td>Harshit</td>
+        <td>Pareek</td>
+        <td>AF098908</td>
+        <td>Amaze Admin</td>
+      </tr>
+      <tr>
+        <td>Harshit</td>
+        <td>Pareek</td>
+        <td>AF098908</td>
+        <td>Amaze Admin</td>
+      </tr>
+      <tr>
+        <td>Harshit</td>
+        <td>Pareek</td>
+        <td>AF098908</td>
+        <td>Amaze Admin</td>
+      </tr>
+      <tr>
+        <td>Harshit</td>
+        <td>Pareek</td>
+        <td>AF098908</td>
+        <td>Amaze Admin</td>
+      </tr>
+      <tr>
+        <td>Harshit</td>
+        <td>Pareek</td>
+        <td>AF098908</td>
+        <td>Amaze Admin</td>
+      </tr>
+      <tr>
+        <td>Harshit</td>
+        <td>Pareek</td>
+        <td>AF098908</td>
+        <td>Amaze Admin</td>
+      </tr>
+    </tbody>
+  </table>
+  </section> -->
+<!-- <section class="table-section">
+  <div class="user-table-container">
+    <cdk-table #table [dataSource]="dataSource" class="user-table">
+      
+      <ng-container cdkColumnDef="first_name">
+        <cdk-header-cell *cdkHeaderCellDef class="user-header-cell"> FirstName </cdk-header-cell>
+        <cdk-cell *cdkCellDef="let user" class="user-cell"> {{ user.first_name }} </cdk-cell>
+      </ng-container>
+
+      <ng-container cdkColumnDef="progress">
+        <cdk-header-cell *cdkHeaderCellDef class="user-header-cell"> LastName </cdk-header-cell>
+        <cdk-cell *cdkCellDef="let user" class="user-cell"> {{ user.last_name }} </cdk-cell>
+      </ng-container>
+
+      <ng-container cdkColumnDef="employee_id">
+        <mat-header-cell *cdkHeaderCellDef class="user-header-cell">EmployeeID</mat-header-cell>
+        <mat-cell *matCellDef="let user" class="user-cell">{{ user.employee_id }}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="role">
+        <mat-header-cell *matHeaderCellDef class="user-header-cell">Role</mat-header-cell>
+        <mat-cell *matCellDef="let user" class="user-cell">{{ user.role }}</mat-cell>
+      </ng-container>
+  
+      <cdk-header-row *cdkHeaderRowDef="displayedColumns" class="user-header-row"></cdk-header-row>
+      <cdk-row *cdkRowDef="let row; columns: displayedColumns;" class="user-row"></cdk-row>
+    </cdk-table>
+  </div>
+</section> -->
+
+<!-- <table class="table">
+</table> -->
+
+
+
+<!-- <section class="table-section">
+  <mat-table class="mat-elevation-z8" [dataSource]="dataSource" matSort>
+    <ng-container matColumnDef="first_name">
+      <mat-header-cell *matHeaderCellDef mat-sort-header>FirstName</mat-header-cell>
+      <mat-cell *matCellDef="let user">{{ user.first_name }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="last_name">
+      <mat-header-cell *matHeaderCellDef>LastName</mat-header-cell>
+      <mat-cell *matCellDef="let user">{{ user.last_name }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="employee_id">
+      <mat-header-cell *matHeaderCellDef>EmployeeID</mat-header-cell>
+      <mat-cell *matCellDef="let user">{{ user.employee_id }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="role">
+      <mat-header-cell *matHeaderCellDef>Role</mat-header-cell>
+      <mat-cell *matCellDef="let user">{{ user.role }}</mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns" color="primary"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;" (click)="onRowClicked(row)"></mat-row>
+  </mat-table>
+</section> -->
