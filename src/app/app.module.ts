@@ -18,6 +18,8 @@ import { SearchComponent } from './components/search/search.component';
 import { PageNotFound } from "./components/pageNotFound/pageNotFound.component";
 import { CodingreviewComponent } from './components/codingreview/codingreview.component';
 import { TableComponent } from './components/table/table.component';
+import { InfocodereviewComponent } from './components/infocodereview/infocodereview.component';
+import { InfoTableComponent } from './components/info-table/info-table.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { TableComponent } from './components/table/table.component';
     PageNotFound,
     CodingreviewComponent,
     TableComponent,
+    InfocodereviewComponent,
+    InfoTableComponent,
   ],
   imports: [
     BrowserModule,

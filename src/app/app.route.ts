@@ -5,6 +5,8 @@ import { AppComponent } from "./app.component";
 import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import { TableComponent } from "./components/table/table.component";
 import { CodingreviewComponent } from './components/codingreview/codingreview.component';
+import { InfocodereviewComponent } from './components/infocodereview/infocodereview.component';
+import { InfoTableComponent } from './components/info-table/info-table.component';
 
 // import {SortableColumnComponent} from"./components/sortable-column/sortable-column.component"
 
@@ -13,7 +15,9 @@ export const routes: Routes = [
   { path: "", component: LoginComponent },
   { path: "dashboard", component: DashboardComponent },
   { path: "codingreview", component: CodingreviewComponent },
-  { path: "table", component: TableComponent }
+  { path: "table", component: TableComponent },
+  { path: "info", component: InfocodereviewComponent }
+
 
 ];
 export const appRoutingProviders: any[] = [];

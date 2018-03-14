@@ -1,63 +1,100 @@
 
-<section class="table-section">
-  <div class="container">
-    
-    <table style="width:1250px;margin-left:-55px; margin-top:50px" class="table">
-        <thead>
+<section style="background-color:lightgray" class="table-section">
+<div >
+  <table style="width:100%;margin-left: 25px">
+    <tr>
+      <td>
+        <a href = "/codingreview" style="font-size: 20px;text-decoration: none" class="glyphicon glyphicon-arrow-left"> Back</a>
 
-      <tr>
-        <th>Status</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Discharg Date</th>
-      </tr>
+      </td>
+      <td style="font-size:25px">John Doe</td>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Member Plan</th>
+      <th>Member DOB</th>
+      <th>Discharge Date</th>
+      <th>Admit Date</th>
+      <th>Primary DX Code</th>
+      <th>Discharge Diagnosis</th>
+      <th>Admit Diagnosis</th>
+      <th>Admitting Facility</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CareMore Health Plan</td>
+      <td>1/7/1953</td>
+      <td>11/11/2017</td>
+      <td>11/11/2017</td>
+      <td>E11.10 Type2 Diabetes</td>
+      <td>Diabetes Mellitus</td>
+      <td>Diabetes Mellitus</td>
+      <td>LakeWood Regional Office</td>
+
+    </tr>
+
+  </table>
+</div>  
+</section>
+  <section class="table-section">
+
+  <div class="container">
+    <table style="width:1250px;margin-left:-55px; margin-top:50px" class="table">
+      <thead>
+
+        <tr>
+          <th>Care Provider</th>
+          <th>Date of Service</th>
+          <th>Review Status</th>
+        </tr>
       </thead>
       <tbody>
 
-      <tr  routerLink = "/info">
-        
-        <td><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
-          New</td>
-        <td>John</td>
-        <td>Doe</td>
-        <td>11/11/2017</td>
-    
-      </tr>
-      <tr  routerLink = "/info">
-        <td><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> New</td>
-        <td>Tom</td>
-        <td>Smith</td>
-        <td>11/12/2017</td>
-    
-      </tr>
-      <tr  routerLink = "/info">
-        <td><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> In Progress</td>
-        <td>Jeff</td>
-        <td>Jhone</td>
-        <td>12/10/2017</td>
-    
-      </tr>
-    
-    <tr  routerLink = "info">
-      <td><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> In Progress</td>
-      <td>Jane</td>
-      <td>Robert</td>
-      <td>12/10/2017</td>
-    
-    </tr>
-    
-    <tr>
-      <td><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> New</td>
-      <td>Jane</td>
-      <td>Mark</td>
-      <td>1/10/2017</td>
-    
-    </tr>
-  </tbody>
+        <tr data-toggle="modal" data-target="#exampleModalCenter">
+          <td data-toggle="modal" data-target="#myModal">Aziz Douglas</td>
+          <td>1/1/2017</td>
+          <td>
+            <span style="font-size: 25px" class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+          </td>
+        </tr>
+        <tr data-toggle="modal" data-target="#exampleModalCenter">
+          <td>Aziz Douglas</td>
+          <td>12/02/2017</td>
+          <td>
+            <span style="font-size: 25px" class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+          </td>
+        </tr>
+
+        <tr data-toggle="modal" data-target="#exampleModalCenter">
+          <td>Mark Edward</td>
+          <td>02/03/2017</td>
+          <td>
+            <span style="font-size: 25px" class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+          </td>
+        </tr>
+
+        <tr data-toggle="modal" data-target="#exampleModalCenter">
+          <td>Aziz Douglas</td>
+          <td>15/03/2017</td>
+          <td>
+            <span style="font-size: 25px" class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+          </td>
+        </tr>
+        <tr data-toggle="modal" data-target="#exampleModalCenter">
+          <td>Mark Edward</td>
+          <td>05/04/2017</td>
+          <td>
+            <span style="font-size: 25px" class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+          </td>
+        </tr>
+      </tbody>
 
     </table>
-    </div>
+  </div>
 </section>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  crossorigin="anonymous"></script>
+
 <!-- <section class="table-section">
   <table class="table">
     <thead>
