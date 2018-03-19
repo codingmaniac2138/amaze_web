@@ -15,7 +15,7 @@ export const routes: Routes = [
   { path: "", component: LoginComponent },
   { path: "dashboard", component: DashboardComponent },
   { path: "codingreview", component: CodingreviewComponent },
-  { path: "table", component: TableComponent },
+  { path: "table", component: InfoTableComponent },
   { path: "info", component: InfocodereviewComponent }
 
 
