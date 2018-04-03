@@ -16,7 +16,7 @@ export const routes: Routes = [
   { path: "dashboard", component: DashboardComponent },
   { path: "codingreview", component: CodingreviewComponent },
   { path: "table", component: InfoTableComponent },
-  { path: "info", component: InfocodereviewComponent }
+  { path: "info/:id", component: InfocodereviewComponent }
 
 
 ];
