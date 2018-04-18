@@ -23,6 +23,26 @@ export class InfoTableComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+
+    (function(document){
+      var modal = document.getElementById('modal');
+      var overlay = document.getElementById('overlay');
+      var clickElement = document.getElementById('button');
+    
+      var openModal = function(){
+        modal.style.display = 'block';
+        overlay.style.display = 'block';
+      };
+    
+      var closeModal = function(){
+        modal.style.display = 'none';
+        overlay.style.display = 'none';
+      };
+    
+      clickElement.addEventListener('click', openModal);
+      overlay.addEventListener('click', closeModal);
+    })(document);
+
     // ---------------------------------------------------------------------------------------------
 this.data_set =[{"John":[{ "Care Provider": "Aziz Douglas", "Date of Service": "12/02/2017", "Review Status": true },
     { "Care Provider": "ramo Douglas", "Date of Service": "18/02/2017", "Review Status": true },
@@ -36,7 +56,7 @@ this.data_set =[{"John":[{ "Care Provider": "Aziz Douglas", "Date of Service": "
     { "Care Provider": "trano Douglas", "Date of Service": "18/02/2017", "Review Status": true },
     { "Care Provider": "sun Edward", "Date of Service": "02/03/2017", "Review Status": true },
     { "Care Provider": "moon Douglas", "Date of Service": "15/03/2017", "Review Status": true },
-    { "Care Provider": "mars Edward", "Date of Service": "05/04/2017", "Review Status": true }]},{"jeff":[{ "Care Provider": "Aziz Douglas", "Date of Service": "12/02/2017", "Review Status": true },
+    { "Care Provider": "mars Edward", "Date of Service": "05/04/2017", "Review Status": true }]},{"Jeff":[{ "Care Provider": "Aziz Douglas", "Date of Service": "12/02/2017", "Review Status": true },
     { "Care Provider": "pluto Douglas", "Date of Service": "18/02/2017", "Review Status": true },
     { "Care Provider": "popye Edward", "Date of Service": "02/03/2017", "Review Status": true },
     { "Care Provider": "johns Douglas", "Date of Service": "15/03/2017", "Review Status": true },
@@ -80,7 +100,9 @@ this.data_set =[{"John":[{ "Care Provider": "Aziz Douglas", "Date of Service": "
       this.character = value_list[0]
       console.log(this.character)
     
+      
   }
+
 // receiveMessage($event){
 //   this.message = $event
 // }

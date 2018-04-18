@@ -2,14 +2,14 @@
 <section class="table-section">
   <div class="container">
     
-    <table style="width:1250px;margin-left:-55px; margin-top:50px" class="table">
+    <table class="table">
         <thead>
 
       <tr>
-        <th>Status</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Discharg Date</th>
+        <th >Status</th>
+        <th >First Name</th>
+        <th >Last Name</th>
+        <th >Discharg Date</th>
       </tr>
       </thead>
       <tbody>
@@ -58,6 +58,40 @@
     </table>
     </div>
 </section>
+<section class="table-section">
+
+  <!-- -dynamic table- -->
+  <div class="container">
+    <!-- {{ character }} -->
+    <table id="tb" class="table table-bordered sortable">     <!-- <table id="example" class="table "> -->
+      <thead>
+      <tr>
+        <th *ngFor="let col of columns">
+          {{col}}
+        </th>
+      </tr>
+    </thead>
+      <tr routerLink="/info/John" *ngFor="let char of character">
+      
+          <ng-container *ngIf="char.Status == 'New'">
+                              <td><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> {{char.Status}}</td>
+                              </ng-container>
+          <ng-container *ngIf="char.Status == 'In Progress'">
+                              <td><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> {{char.Status}}</td>
+                              </ng-container>
+  <td *ngFor="let col of columns|slice:1" >
+        {{char[col]}}
+        </td>
+         
+          
+       
+      </tr>
+    </table>
+  </div>
+</section>
+<!-- 77777777777777777777777777777777777777777777777777777777777777777777777777777777 -->
+
+<!-- 66666666666666666666666666666666666666666666666666666666666666666666666666666666666666666 -->
 <!-- <section class="table-section">
   <table class="table">
     <thead>

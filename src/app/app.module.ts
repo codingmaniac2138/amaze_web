@@ -8,6 +8,7 @@ import { CookieModule } from "ngx-cookie";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { OrderModule } from 'ngx-order-pipe';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { CommonModule } from '@angular/common';  
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -20,6 +21,7 @@ import { CodingreviewComponent } from './components/codingreview/codingreview.co
 import { TableComponent } from './components/table/table.component';
 import { InfocodereviewComponent } from './components/infocodereview/infocodereview.component';
 import { InfoTableComponent } from './components/info-table/info-table.component';
+import { CrmodalsComponent } from './components/crmodals/crmodals.component';
 
 @NgModule({
   declarations: [
@@ -33,8 +35,10 @@ import { InfoTableComponent } from './components/info-table/info-table.component
     TableComponent,
     InfocodereviewComponent,
     InfoTableComponent,
+    CrmodalsComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     HttpClientModule,
     FormsModule,

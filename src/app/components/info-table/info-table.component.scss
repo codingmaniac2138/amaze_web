@@ -39,23 +39,7 @@
             font-weight: $font-weight-medium;
             color: $light-blue;
         }
-        & > thead > tr > th:first-child {
-           position: relative;
-
-           &::after {
-               content: "";
-               display: inline-block;
-               position: absolute;
-               height: 0.9em;
-               width: 0.9em;
-               top: 44%;
-               left: 46%;
-               background-image: url("../../../assets/images/arrow-icon-blue-fill.svg");
-               background-repeat: no-repeat;
-               pointer-events: none;
-           } 
-
-        }
+ 
         & > tbody :hover{
             background-color:#9bbed8;
             
@@ -70,7 +54,28 @@
     margin-left:-55px; 
     margin-top:50px;
 }
+.modal{
+    background-color:white;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 850px;
+    z-index: 1000;
+    display: none;
+}
 
+.overlay{
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: none;
+}
 // .user-table-container {
 //     display: flex;
 //     flex-direction: column;

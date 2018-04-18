@@ -5,6 +5,9 @@
     background-color: $med-grey;
     
     .table {
+        width:1250px;
+        margin-left:-55px; 
+        margin-top:50px;
         padding: 5px;
         & > thead {
             background-color: #EBEBEB;
@@ -18,23 +21,7 @@
             font-weight: $font-weight-medium;
             color: $light-blue;
         }
-        & > thead > tr > th:first-child {
-           position: relative;
-
-           &::after {
-               content: "";
-               display: inline-block;
-               position: absolute;
-               height: 0.9em;
-               width: 0.9em;
-               top: 44%;
-               left: 46%;
-               background-image: url("../../../assets/images/arrow-icon-blue-fill.svg");
-               background-repeat: no-repeat;
-               pointer-events: none;
-           } 
-
-        }
+       
         & > tbody :hover{
             background-color:#9bbed8;
             

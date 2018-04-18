@@ -1,7 +1,8 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, Input ,ViewChild } from '@angular/core';
 // import { MatSort, MatTableDataSource, MatSortable } from "@angular/material";
 // import { User } from "../../models/user.model";
-import { DummyData } from "./dummy.data";
+// import { DummyData } from "./dummy.data";
+import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: "app-table",
@@ -11,7 +12,12 @@ import { DummyData } from "./dummy.data";
 
 // Table Component test that would populate the data, sort the first_name only and apply pagination too.
 export class TableComponent implements OnInit {
-  
+  @Input() character: any;
+  @Input() columns: string[];
+  id: number;
+  data_set: any;
+  value: any;
+  private sub: any;
   // @ViewChild(MatSort) sort: MatSort;
   
   // data source from which we have to get the data 
@@ -25,14 +31,34 @@ export class TableComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.dataSource = new MatTableDataSource(DummyData);
-    // this.dataSource.sort = this.sort;
+
+    
+    // ---------------------------------------------------------------------------------------------
+this.data_set =[{ "First Name": "John","Last Name":"Doe", "Discharge Date": "11/11/2017", "Status": "New" },
+{ "First Name": "Tom","Last Name":"Smith", "Discharge Date": "11/12/2017", "Status": "New" },
+{ "First Name": "Jeff","Last Name":"Jhone", "Discharge Date": "12/10/2017", "Status": "In Progress" },
+{ "First Name": "Jane","Last Name":"Robert", "Discharge Date": "12/10/2017", "Status": "In Progress" },
+{ "First Name": "Ross","Last Name":"Mark", "Discharge Date": "1/10/2017", "Status": "New" }
+    
+    ]
+
+    this.columns = ["Status","First Name", "Last Name", "Discharge Date"]
+
+    var value_list =[]
+ 
+      this.character = this.data_set
+      console.log(this.character)
+      
+      // document.getElementsByTagName('td').inn;
+      
   }
 
   // Handling the on click event on the row
   onRowClicked(row) {
     console.log("the row is: "+ JSON.stringify(row));
+    
   }
+  
   
 }
 
