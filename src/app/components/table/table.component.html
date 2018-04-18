@@ -1,64 +1,5 @@
 
 <section class="table-section">
-  <div class="container">
-    
-    <table class="table">
-        <thead>
-
-      <tr>
-        <th >Status</th>
-        <th >First Name</th>
-        <th >Last Name</th>
-        <th >Discharg Date</th>
-      </tr>
-      </thead>
-      <tbody>
-
-      <tr  routerLink = "/info/John">
-        
-        <td><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
-          New</td>
-        <td>John</td>
-        <td>Doe</td>
-        <td>11/11/2017</td>
-    
-      </tr>
-      <tr  routerLink = "/info/Tom">
-        <td><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> New</td>
-        <td>Tom</td>
-        <td>Smith</td>
-        <td>11/12/2017</td>
-    
-      </tr>
-      <tr  routerLink = "/info/Jeff">
-        <td><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> In Progress</td>
-        <td>Jeff</td>
-        <td>Jhone</td>
-        <td>12/10/2017</td>
-    
-      </tr>
-    
-    <tr  routerLink = "/info/Jane">
-      <td><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> In Progress</td>
-      <td>Jane</td>
-      <td>Robert</td>
-      <td>12/10/2017</td>
-    
-    </tr>
-    
-    <tr routerLink = "/info/Ross">
-      <td><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> New</td>
-      <td>Ross</td>
-      <td>Mark</td>
-      <td>1/10/2017</td>
-    
-    </tr>
-  </tbody>
-
-    </table>
-    </div>
-</section>
-<section class="table-section">
 
   <!-- -dynamic table- -->
   <div class="container">
@@ -79,10 +20,10 @@
           <ng-container *ngIf="char.Status == 'In Progress'">
                               <td><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> {{char.Status}}</td>
                               </ng-container>
-  <td *ngFor="let col of columns|slice:1" >
-        {{char[col]}}
-        </td>
-         
+          <td *ngFor="let col of columns|slice:1" >
+                {{char[col]}}
+                </td>
+                
           
        
       </tr>
