@@ -50,7 +50,7 @@ this.data_set =[{ "First Name": "John","Last Name":"Doe", "Discharge Date": "11/
       console.log(this.character)
       
       // document.getElementsByTagName('td').inn;
-     
+   
   }
 
   // Handling the on click event on the row
@@ -58,7 +58,38 @@ this.data_set =[{ "First Name": "John","Last Name":"Doe", "Discharge Date": "11/
     console.log("the row is: "+ JSON.stringify(row));
     
   }
-  
+  myFunction() {
+    var input, filter, table, tr, td,td1,td2,td3, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("tb");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+      td = tr[i].getElementsByTagName("td")[0];
+      td1 = tr[i].getElementsByTagName("td")[1];
+      td2 = tr[i].getElementsByTagName("td")[2];
+      td3 = tr[i].getElementsByTagName("td")[3];
+
+      if (td) {
+        if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+        }           
+        else if(td1.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+         }
+         else if(td2.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+         }
+         else if(td3.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          tr[i].style.display = "";
+         }
+          else {
+          tr[i].style.display = "none";
+        }
+      } 
+      
+    }
+  }
   
 }
 
