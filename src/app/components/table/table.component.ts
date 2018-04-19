@@ -34,11 +34,11 @@ export class TableComponent implements OnInit {
 
     
     // ---------------------------------------------------------------------------------------------
-this.data_set =[{ "First Name": "John","Last Name":"Doe", "Discharge Date": "11/11/2017", "Status": "New" },
-{ "First Name": "Tom","Last Name":"Smith", "Discharge Date": "11/12/2017", "Status": "New" },
+this.data_set =[{ "First Name": "John","Last Name":"Doe", "Discharge Date": "11/10/2017", "Status": "New" },
+{ "First Name": "Tom","Last Name":"Smith", "Discharge Date": "08/12/2017", "Status": "New" },
 { "First Name": "Jeff","Last Name":"Jhone", "Discharge Date": "12/10/2017", "Status": "In Progress" },
-{ "First Name": "Jane","Last Name":"Robert", "Discharge Date": "12/10/2017", "Status": "In Progress" },
-{ "First Name": "Ross","Last Name":"Mark", "Discharge Date": "1/10/2017", "Status": "New" }
+{ "First Name": "Jane","Last Name":"Robert", "Discharge Date": "11/11/2017", "Status": "In Progress" },
+{ "First Name": "Ross","Last Name":"Mark", "Discharge Date": "01/10/2018", "Status": "New" }
     
     ]
 
@@ -50,7 +50,7 @@ this.data_set =[{ "First Name": "John","Last Name":"Doe", "Discharge Date": "11/
       console.log(this.character)
       
       // document.getElementsByTagName('td').inn;
-      
+     
   }
 
   // Handling the on click event on the row

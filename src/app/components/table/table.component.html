@@ -7,7 +7,7 @@
     <table id="tb" class="table table-bordered sortable">     <!-- <table id="example" class="table "> -->
       <thead>
       <tr>
-        <th *ngFor="let col of columns">
+        <th data-defaultsort="enabled" *ngFor="let col of columns">
           {{col}}
         </th>
       </tr>
@@ -20,11 +20,10 @@
           <ng-container *ngIf="char.Status == 'In Progress'">
                               <td><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> {{char.Status}}</td>
                               </ng-container>
-          <td *ngFor="let col of columns|slice:1" >
-                {{char[col]}}
-                </td>
+                              <td data-defaultsign='AZ' >{{char["First Name"]}}</td>
+                              <td data-defaultsign='AZ'>{{char["Last Name"]}}</td>
+                              <td data-dateformat="MM-DD-YYYY" data-defaultsign='month' >{{char["Discharge Date"]}}</td>
                 
-          
        
       </tr>
     </table>
